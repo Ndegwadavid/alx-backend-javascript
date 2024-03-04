@@ -1,11 +1,18 @@
 // function taskFirst to instantiate varables using const
 // fucntion taskNext to instatiate varables using let
 
-export const taskFirst = () => {
-    var task = 'I prefer const when i can';
+export function taskFirst() {
+    var task = 'I prefer const when I can.';
     return task;
-}
-export const taskNext = () => {
-    let task = 'But let when i have to';
-    return task;
-}
+  }
+  
+  export function getLast() {
+    return ' is okay';
+  }
+  
+  export function taskNext() {
+    var combination = 'But sometimes let';
+    combination += getLast();
+  
+    return combination;
+  }
