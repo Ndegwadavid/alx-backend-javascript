@@ -12,4 +12,3 @@ function handleResponseFromAPI(promise) {
       return new Error();
     });
 }
-
